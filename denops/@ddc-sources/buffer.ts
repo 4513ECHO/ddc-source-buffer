@@ -3,20 +3,20 @@ import {
   Context,
   DdcEvent,
   Item,
-} from "https://deno.land/x/ddc_vim@v4.1.0/types.ts";
+} from "https://deno.land/x/ddc_vim@v4.3.1/types.ts";
 import {
   Denops,
   fn,
   op,
   vars,
-} from "https://deno.land/x/ddc_vim@v4.1.0/deps.ts";
+} from "https://deno.land/x/ddc_vim@v4.3.1/deps.ts";
 import {
   GatherArguments,
   OnEventArguments,
-} from "https://deno.land/x/ddc_vim@v4.1.0/base/source.ts";
-import { convertKeywordPattern } from "https://deno.land/x/ddc_vim@v4.1.0/util.ts";
-import { basename } from "https://deno.land/std@0.208.0/path/mod.ts";
-import { assert, is } from "https://deno.land/x/unknownutil@v3.11.0/mod.ts";
+} from "https://deno.land/x/ddc_vim@v4.3.1/base/source.ts";
+import { convertKeywordPattern } from "https://deno.land/x/ddc_vim@v4.3.1/utils.ts";
+import { basename } from "https://deno.land/std@0.212.0/path/mod.ts";
+import { assert, is } from "https://deno.land/x/unknownutil@v3.14.1/mod.ts";
 
 type BufCache = {
   bufnr: number;
